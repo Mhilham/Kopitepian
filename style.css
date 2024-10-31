@@ -20,7 +20,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* Navbar */
@@ -141,13 +141,17 @@ body {
 
 /* about section*/
 .about {
-  pading: 8rem 7% 1,4rem;
+  pading: 10rem 7% 1,4rem;
 }
 
 .about h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primary);
 }
 
 
