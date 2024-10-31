@@ -141,7 +141,7 @@ body {
 
 /* about section*/
 .about {
-  pading: 10rem 7% 1,4rem;
+  padding: 10rem 7% 1,4rem;
 }
 
 .about h2 {
@@ -152,6 +152,35 @@ body {
 
 .about h2 span {
   color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 30rem;
+}
+
+.about .row .about-img img {
+  width: 50%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1,8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0,8rem;
+  font-size: 1,8rem;
+  font-weight: 100;
+  line-height: 1,6;
 }
 
 
@@ -202,15 +231,22 @@ body {
     transform-origin: 0 0;
   }
 
-  .navbar .navbar-nav a:hover::after {
+    .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
 
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
 
-  /*monile phone */
-  @media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
+  
+  
+
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
