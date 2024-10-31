@@ -139,6 +139,18 @@ body {
 }
 
 
+/* about section*/
+.about {
+  pading: 8rem 7% 1,4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+
 
 /* median queries */
 
