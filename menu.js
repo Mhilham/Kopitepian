@@ -24,3 +24,22 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+export async function ambilDaftarmenu() {
+  const refDokumen = collection(db, "Menu");
+  const kueri = query(refDokumen, orderBy("nama"));
+  const cuplikankueri = await getDocs(kueri);
+
+  let hasil = []; // tes
+  cuplikankueri.forEach((dok) => {
+
+    
+    hasil.push({
+      id: dok.id,
+      nama: dok.data().nama,
+      harga: dok.data().harga,
+    });
+  });
+
+  return hasil;
+}

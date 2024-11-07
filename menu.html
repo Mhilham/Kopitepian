@@ -35,6 +35,27 @@
 
 
   </nav>
+  
+    <script type="module">
+ 
+import {ambilDaftarmenu} from './menu.js';
+   
+     $(document).ready(async function(){
+  let elemenmenu = $("#daftar-menu");
+  let daftarmenu = await ambilDaftarmenu();
+
+  daftarmenu.forEach((data)=>{
+    elemenDaftarmenu.append(
+          '<div class="card">' +
+          '<img id="' + data.id + '" src="https://picsum.photos/100/60" class="card-img-top">' +
+          '<div class="card-body">' +
+          '<span>' + data.namamenu + ', ' + data.harga + '</span>' +
+          '</div>' +
+          '</div>' 
+        );
+      });
+    });
+  </script>
 
 
 
