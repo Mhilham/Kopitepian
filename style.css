@@ -228,6 +228,25 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
+
+/* kopi*/
+.kopi h2,
+.products h2,
+.contact h2  {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.kopi h2 span {
+  color: var(--primary);
+}
+
+
+
+
 /* Footer */
 footer {
   background-color: var(--primary);
