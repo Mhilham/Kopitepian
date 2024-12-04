@@ -70,7 +70,7 @@
 
     <div class="row">
       <div class="about-img">
-        <img src="img/tentang-kami.png" alt="Tentang kami">
+        <img src="img/menu/kami.jpg" alt="Tentang kami">
         <div class="content">
           <h3>kenapa memilih kopi kami?</h3>
           <p>Di bawah langit jingga, ditemani secangkir kopi hangat, kuhayati keindahan senja. Setiap tegukannya membawa cerita tentang hari yang telah berlalu dan harapan untuk esok hari.</p>
@@ -85,10 +85,11 @@
 
   <!-- menu start -->
 
+  <!-- Menu Section start -->
   <section id="menu" class="menu">
-    <h2><span>Menu</span> signature</h2>
-    <p>kopi kami sangat enak sekali</p>
-
+    <h2><span>Menu</span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, repellendus numquam quam tempora voluptatum.
+    </p>
 
     <div class="row">
       <div class="menu-card">
@@ -96,55 +97,34 @@
         <h3 class="menu-card-title">- Espresso -</h3>
         <p class="menu-card-price">IDR 15K</p>
       </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Capuccino -</h3>
+        <p class="menu-card-price">IDR 25K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Latte -</h3>
+        <p class="menu-card-price">IDR 20K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">IDR 15K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">IDR 15K</p>
+      </div>
+      <div class="menu-card">
+        <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img">
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">IDR 15K</p>
+      </div>
     </div>
   </section>
-
   <!-- menu end -->
-
-  <!-- semua menu start -->
-  <section id="kopi" class="kopi">
-    <h2><span>Menu</span> kami</h2>
-   
-    <section id="kopi" class="kopi">
-      <div class="kopi2">
-        <div class="container-fluid">
-          <div class="row" id="daftar-kopi">
-          </div>
-        </div>
-      </div>
-
-      </div>
-      <div class="text-right font-bold">
-        <p>
-        </p>
-      </div>
-    </section>
-
-    <script type="module">
-      import { ambilDaftarkopi } from './script.js';
-
-      $(document).ready(async function() {
-        let elemendaftar = $("#daftar-kopi");
-        let daftarkopi = await ambilDaftarkopi();
-
-        daftarkopi.forEach((data) => {
-          elemendaftar.append(
-            '<div class="card">' +
-            '<img id="' + data.id + '" src="img/menu/1.jpg" class="card-img-top">' +
-            '<div class="card-body">' +
-            '<span>' + data.nama + ', ' + data.harga + '</span>' +
-            '</div>' +
-            '</div>'
-          );
-        });
-      });
-    </script>
-
-
-    <!-- menu all end -->
-
-
-
 
 
     <!-- Footer start -->

@@ -41,3 +41,36 @@ export async function ambildaftarmenu() {
   
   return hasil;
 }
+
+
+
+export async function tambahmenu( nama, harga ) {
+  try {
+    const dokRef = await addDoc(collection(db, 'Menu'), {
+     nama:nama,
+     harga:harga,
+    });
+    console.log('berhasil menembah menu ' + dokRef.id);
+  } catch (e) {
+    console.log('gagal menambah menu ' + e);
+  }
+}
+
+
+export async function hapusmenu(docId) {
+  await deleteDoc(doc(db, "Menu", docId));
+}
+
+export async function ubahmenu(docId, nama, harga) {
+  await updateDoc(doc(db, "Menu", docId), {
+    nama: nama,
+    harga: harga,
+  });
+}
+
+export async function ambilmenu(docId) {
+  const docRef = await doc(db, "Menu", docId);
+  const docSnap = await getDoc(docRef);
+
+  return await docSnap.data();
+}
