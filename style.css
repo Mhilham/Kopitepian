@@ -190,6 +190,16 @@ body {
   margin-bottom: 1rem;
 }
 
+.menu h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu h2 span {
+  color: var(--primary);
+}
+
 .menu p,
 .products p,
 .contact p {
@@ -219,6 +229,17 @@ body {
 
 .menu .row .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
+}
+
+
+.alamat h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.alamat h2 span {
+  color: var(--primary);
 }
 
 
